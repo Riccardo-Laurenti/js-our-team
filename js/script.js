@@ -39,3 +39,34 @@ const peopleTeam = [
 // Prendo elemento dal Dom  
 // E stampo dinamicamente una card per ogni membro del team
 let memberCards = document.querySelector(".team-container"); 
+
+// creo ciclo for
+for (let i = 0; i < peopleTeam.length; i++) {
+
+    let cardElement = document.createElement("div");
+    let divImgCard = document.createElement("div");
+    let imgElement = document.createElement('img');
+    let divElementText = document.createElement('div');
+    let h3Element = document.createElement('h3');
+    let pElement = document.createElement('p');
+
+    imgElement.setAttribute('src', peopleTeam[i].Nome);
+    imgElement.setAttribute('src', peopleTeam[i].Foto);
+
+    let h3Text = document.createTextNode(peopleTeam[i].Nome);
+    let pElementText = document.createTextNode(peopleTeam[i].Ruolo);
+
+    
+    cardElement.classList.add("team-card");
+    divImgCard.classList.add('card-image');
+    divElementText.classList.add('card-text');
+
+    memberCards.append(cardElement);
+    cardElement.append(divImgCard);
+    divImgCard.append(imgElement);
+    cardElement.append(divElementText);
+    divElementText.append(h3Element);
+    h3Element.append(h3Text);
+    divElementText.append(pElement);
+    pElement.append(pElementText);
+}
