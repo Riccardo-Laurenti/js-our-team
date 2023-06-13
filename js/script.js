@@ -28,13 +28,31 @@ Barbara Ramos |	Graphic Designer     |	barbara-ramos-graphic-designer.jpg
 // Creo un array di oggetti che rappresentano i membri del team
 // Ogni membro del Team ha le informazioni per stampare la relativa card: Nome, Ruolo e Foto.
 const peopleTeam = [
-    { Nome : 'Wayne Barnett', Ruolo : 'Founder & CEO', Foto : 'img/wayne-barnett-founder-ceo.jpg' },
-    { Nome : 'Angela Caroll', Ruolo: 'Chief Editor', Foto : 'img/angela-caroll-chief-editor.jpg' },
-    { Nome : 'Walter Gordon', Ruolo: 'Office Manager', Foto : 'img/walter-gordon-office-manager.jpg' },
-    { Nome : 'Angela Lopez', Ruolo : 'Social Media Manager', Foto : 'img/angela-lopez-social-media-manager.jpg' },
-    { Nome : 'Scott Estrada', Ruolo : 'Developer', Foto : 'img/scott-estrada-developer.jpg' },
-    { Nome : 'Barbara Ramos', Ruolo : 'Graphic Designer', Foto : 'img/barbara-ramos-graphic-designer.jpg' }
-] 
+    { Nome : 'Wayne Barnett', 
+      Ruolo : 'Founder & CEO', 
+      Foto : 'img/wayne-barnett-founder-ceo.jpg',
+    },
+    { Nome : 'Angela Caroll',
+     Ruolo: 'Chief Editor', 
+     Foto : 'img/angela-caroll-chief-editor.jpg', 
+    },
+    { Nome : 'Walter Gordon', 
+    Ruolo: 'Office Manager', 
+    Foto : 'img/walter-gordon-office-manager.jpg', 
+    },
+    { Nome : 'Angela Lopez', 
+    Ruolo : 'Social Media Manager', 
+    Foto : 'img/angela-lopez-social-media-manager.jpg', 
+    },
+    { Nome : 'Scott Estrada', 
+    Ruolo : 'Developer', 
+    Foto : 'img/scott-estrada-developer.jpg',
+    },
+    { Nome : 'Barbara Ramos', 
+    Ruolo : 'Graphic Designer', 
+    Foto : 'img/barbara-ramos-graphic-designer.jpg' ,
+    },
+];
 
 // Prendo elemento dal Dom  
 // E stampo dinamicamente una card per ogni membro del team
